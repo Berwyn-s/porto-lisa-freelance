@@ -5,7 +5,7 @@ function Layout() {
   return (
     <div>
       <Navbar />
-      <main className='px-20 py-10 bg-white text-black'>
+      <main className='px-4 md:px-20 py-10 bg-white text-black'>
         <Outlet />
       </main>
       <footer>© 2025 Your Website</footer>
