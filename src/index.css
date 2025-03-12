@@ -7,6 +7,7 @@
     --color-soft-tosca:oklch(73.3% 0.128 186.98);
     --color-soft-blue:oklch(98.85% 0.0054 274.97);
     --color-soft-gray:oklch(73.3% 0.128 186.98);
+    --color-soft-cream-yellow:oklch(99.13% 0.0156 139.44);
 }
 
 :root {

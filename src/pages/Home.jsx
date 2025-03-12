@@ -67,6 +67,28 @@ function Home() {
             <span className="hover:cursor-pointer hover:font-bold">Learn More</span>
           </div>
         </section>
+
+        <section className="bg-soft-cream-yellow rounded-xl px-4 py-8 flex flex-col items-center justify-center mt-16 max-w-[1226px] mx-auto">
+        <div className="uppercase text-gray-400 font-bold font-montserrat text-2xl">Kemudahan Berbisnis</div>
+          <div className="capitalize font-bold text-4xl mt-4 font-montserrat">Mengapa harus memilih kami</div>
+          <div className="flex flex-row mt-16 gap-8 font-montserrat text-2xl font-light justify-between items-center">
+            <div className="flex flex-col justify-center align-center gap-4">
+              <img className="w-52 mx-auto" src="src/assets/home/berbisnis_1.png" alt="" />
+              <div className="text-xl font-semibold text-center">Tersedia kapanpun, dimanapun</div>
+              <p className="text-center text-xl font-light">Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat.</p>
+            </div>
+            <div className="flex flex-col justify-center align-center gap-4">
+              <img className="w-52 mx-auto" src="src/assets/home/berbisnis_2.png" alt="" />
+              <div className="text-xl font-semibold text-center">Tersedia kapanpun, dimanapun</div>
+              <p className="text-center">Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat.</p>
+            </div>
+            <div className="flex flex-col justify-center align-center gap-4">
+              <img className="w-52 mx-auto" src="src/assets/home/berbisnis_1.png" alt="" />
+              <div className="text-xl font-semibold text-center">Tersedia kapanpun, dimanapun</div>
+              <p className="text-center">Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat.</p>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
