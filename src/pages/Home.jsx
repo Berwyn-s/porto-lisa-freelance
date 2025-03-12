@@ -124,12 +124,48 @@ function Home() {
               title="Ramah lingkungan"
               description="Lorem ipsum dolor sit amet consectetur. A diam felis imperdiet amet turpis ac et aliquam"
             />
-          
+          </div>
+        </section>
+
+        <section>
+          <div className="font-bold text-5xl font-montserrat text-center text-soft-black mt-24">
+            Lihat bagaimana berijalan membantu pelanggan
+          </div>
+          <div className="font-light text-center mt-8 text-soft-black underline">
+            <span className="underline hover:cursor-pointer hover:font-semibold">Lihat semua cerita pelanggan</span>
+          </div>
+          <div className="flex flex-row flex-wrap gap-6 mt-8 justify-center">
+            <CustomerReviewCard 
+              imageUrl={"https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+              title={"Astra Financial tingkatkan 43% pendapatan dengan berijalan."}
+            />
+            <CustomerReviewCard 
+              imageUrl={"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+              title={"Asuransi Ramayana luncurkan layanan baru."}
+            />
+            <CustomerReviewCard 
+              imageUrl={"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+              title={"SEVA menurunkan pengeluaran sebesar 72%."}
+            />
+            <CustomerReviewCard 
+              imageUrl={"https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+              title={"Melalui data mining, MOXA dapatkan sumber pendapatan baru."}
+            />
           </div>
         </section>
       </div>
     );
   }
+
+function CustomerReviewCard({imageUrl, title}){
+  return (
+    <div className="flex flex-col w-70 md:w-80 gap-6">
+      <div className={`rounded-3xl min-w-70 min-h-70 md:min-w-80 md:min-h-80 bg-cover bg-center`}
+        style={{ backgroundImage: `url(${imageUrl})` }} ></div>
+      <div className="font-semibold text-xl">{title}</div>
+    </div>
+  )
+}
 
 function CommunityCard({imageUrl, title, description}){
   return (
