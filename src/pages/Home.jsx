@@ -183,6 +183,8 @@ function Home() {
           </div>
           <img className="mt-8" src="src/assets/company/moxa_icon.png" alt="" />
         </section>
+
+        <OfficeGallery />
       </div>
     );
   }
@@ -213,5 +215,103 @@ function CommunityCard({imageUrl, title, description}){
     </div>
   );
 };
-  
-  export default Home;
+
+const OfficeGallery = () => {
+  const galleryItems = [
+    {
+      id: 1,
+      image: 'https://s3-alpha-sig.figma.com/img/62b7/73ea/a74cd5b02124de9412c0c0399c339649?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VLI51ema074gya0NgGJO~vMzzveGveRG5cDkdAS5T-hav3fAbUYKSGyoMMx0OKAotLu5oN4zU2h2imFf0zumW5mq8bUlyOa7cJMH1xPqLVjmrPcjsAr48hATZj9u3QyvWpMb5Fd2puPaibDJDc~-8iiU6-eCM6tzz07~FZFtQUgdgnDTmlnnDAYB1-t0wNhmit-TfKtf4J1vkmIBekFdGPCNl6H8ejlnHpzAK5VrziWdZgAhInrl8kgivyFpaZ2LT74OmoJs3c0NMEYFX9mLzzS0KAUmJarIWO-LbxM7TY5Scyb84vi~Zha7W1Fs8X0SD37piRGlucWm5yJqbpCPTg__',
+      title: 'Gedung Berijalan Office',
+      isLarge: true,
+    },
+    {
+      id: 2,
+      image: 'https://s3-alpha-sig.figma.com/img/d9a9/7518/46131ef915123749475259abdf712a11?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=g4WQ07-33ubtKc9--HjuP8c~OOiSb80G7IjZLiRBhs~3ShWHGtlsP0vsr0IOOoOzr7sodhv3WJdC61R65x3-~3YqVVCGdbOuV0L8EeO8DuzzHbdKOX21B4sK1ewEFoOpFP6mwowD1gGtgRFEg9OVLUZMWv4M83v3uB80Aj-CAHOmD6TmV6j0cPXtQt8jpxGvm18fUWN4Kn87W-tjfIYv9BSmDPPG0iS-aQqrnK7ajIPIcM-EOuV5cFpaY6KN7FdISFVcGlznMupxMoLVfmgd3E-814tQO2Fvn3B0ndvhq2ImhsQ5mXw3f8AcWOZ-oUbVEOu9lXwQpFMv7vTqLmjXjg__',
+      title: 'Pembagian Paket Sembako',
+      isLarge: false,
+    },
+    {
+      id: 3,
+      image: 'https://s3-alpha-sig.figma.com/img/25db/7489/cef57aff14756d256f8c841e7ee6441b?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=l8trl7yurel6G8bid8ql19i6daj5eOWJh8TzPQ4ISgQC9jbEf3aSBFA7cYwT4LT8gBGo7TxmHWf70oQTwmoDZkHQuGwx5aB7WyqU7D2rmS7fR2E~4HCZvpzqd88c-pGESINwlDFM5ISI3B3klruKE32-32RXMvUtn-NIKJ-C7EKQM3lVl79oh5tDMWq3QbCzy7n9NgcKi4Wma4K~cvmWXDdtF~Zmxez0Gk8OXDkdXwmbtyvOv1efhRrWZdURy0AT1VshT6z8j-0zNhkEDdswBc7Pp0frAaVe-pp9hROxEqq5eGV9I1-ShdKmOKdVow-UJn7tIeRK2giVfGJLesh3lw__',
+      title: 'Milestone Astra ACC',
+      isLarge: false,
+    },
+    {
+      id: 4,
+      image: 'https://s3-alpha-sig.figma.com/img/a6bc/4a45/47b09de6e9daa0d14faec5c12afa970b?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QEf65ENTIt7SJdJvalmqUb1wAHtWgZskjxByHPOr-nMHj09Y~YPMDhIbzkS01L14kuVIVc1kclB6uVlQXdwr~WloZ2ozE39pYpDg0Lf~4wuZO~fvY6Exenf87CGrAEc6oOmO7U1LZaWfKSYVkQLnTwxwiFkkOVA9ZAbexcz5P1AmxzqubxyoPnXQh-N2kncGpE-sBqLZT~dAvR-2~wCeZ51wlmaLcxAEsm6zwCaMJvDRrdHpV3zVtyfkSHaNdAoi~4~xnVQvgCieWhS~3lQIKP2FpwmZbsXTkQR~A4Lb4WaGHSh5dQqUcdm1xsAcTv4kurb8hLhWlYxoTN80qnDEwA__',
+      title: 'Ruang Kerja',
+      isLarge: false,
+    },
+  ];
+
+  return (
+    <div className="container mx-auto p-4">
+      <div className="text-center font-bold text-5xl text-soft-black mt-16">Galeri Foto</div>
+      <div className="underline text-soft-black text-center mt-4">
+        Lihat foto lainnnya
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
+        {/* Large card (left side) */}
+        {galleryItems
+          .filter(item => item.isLarge)
+          .map(item => (
+            <div 
+              key={item.id}
+              className="relative h-96 md:h-full rounded-lg overflow-hidden"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end group">
+              <div className="absolute inset-0 bg-black opacity-0 duration-300 group-hover:opacity-20"></div>
+                <div className="p-6 text-white flex items-center justify-between w-full">
+                  <h2 className="text-2xl md:text-3xl font-bold">{item.title}</h2>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          ))}
+
+        {/* Right column with smaller cards */}
+        <div className="flex flex-col gap-4">
+          {galleryItems
+            .filter(item => !item.isLarge)
+            .map(item => (
+              <div 
+                key={item.id}
+                className="relative h-48 rounded-lg overflow-hidden"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end 
+                 hover:cursor-pointer duration-300 transition-all group">
+                  <div className="absolute inset-0 bg-black opacity-0 duration-300 group-hover:opacity-20"></div>
+                  <div className="p-4 text-white flex items-center justify-between w-full gap-2 transition-all duration-300">
+                    <h2 className="text-xl font-bold group-hover:font-extrabold"> 
+                      {item.title}
+                    </h2>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" 
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
