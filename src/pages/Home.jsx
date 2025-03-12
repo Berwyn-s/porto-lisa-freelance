@@ -127,14 +127,14 @@ function Home() {
           </div>
         </section>
 
-        <section>
+        <section className="max-w-[1226px] mx-auto">
           <div className="font-bold text-5xl font-montserrat text-center text-soft-black mt-24">
-            Lihat bagaimana berijalan membantu pelanggan
+            Lihat bagaimana <span className="text-berijalan-green">berijalan</span> membantu pelanggan
           </div>
           <div className="font-light text-center mt-8 text-soft-black underline">
             <span className="underline hover:cursor-pointer hover:font-semibold">Lihat semua cerita pelanggan</span>
           </div>
-          <div className="flex flex-row flex-wrap gap-6 mt-8 justify-center">
+          <div className="flex flex-row flex-wrap gap-6 mt-12 justify-around">
             <CustomerReviewCard 
               imageUrl={"https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
               title={"Astra Financial tingkatkan 43% pendapatan dengan berijalan."}
@@ -153,16 +153,49 @@ function Home() {
             />
           </div>
         </section>
+
+        <section className="bg-super-soft-gray rounded-xl px-4 py-8 flex flex-col items-center justify-center mt-16 max-w-[1226px] mx-auto">
+          <div className="uppercase text-gray-400 font-bold font-montserrat text-2xl">Happy customers</div>
+          <div className="capitalize font-bold text-4xl mt-4 font-montserrat">Apa kata pelanggan kami</div>
+          <div className="flex flex-row mt-12 gap-6 justify-center items-center">
+            <img src="src/assets/home/quotes_icon.png" alt="" />
+            <div className="flex flex-row items-center gap-4">
+              <div className={`w-15 h-15 bg-cover bg-center inline-block rounded-full`}
+                style={{ backgroundImage: `url(https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)` }}>
+              </div>
+              
+              <div className="flex flex-col">
+                <div className="flex flex-row">
+                  <img src="src/assets/home/star_icon.png" alt="" />
+                  <img src="src/assets/home/star_icon.png" alt="" />
+                  <img src="src/assets/home/star_icon.png" alt="" />
+                  <img src="src/assets/home/star_icon.png" alt="" />
+                  <img src="src/assets/home/star_icon.png" alt="" />
+                </div>
+                <div className="font-bold text-2xl text-soft-black">
+                  Johnson Abadi
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center font-light font-montserrat text-2xl mt-8">
+          Berijalan sangat responsif dan sabar dalam menjawab pertanyaan saya. Mereka juga memberikan saran-saran yang sangat bermanfaat untuk website saya. Setelah berdiskusi, kami pun sepakat untuk membuat website dengan desain yang modern dan minimalis. Proses desain dan pengembangan website berjalan dengan lancar.
+          </div>
+          <img className="mt-8" src="src/assets/company/moxa_icon.png" alt="" />
+        </section>
       </div>
     );
   }
 
 function CustomerReviewCard({imageUrl, title}){
   return (
-    <div className="flex flex-col w-70 md:w-80 gap-6">
-      <div className={`rounded-3xl min-w-70 min-h-70 md:min-w-80 md:min-h-80 bg-cover bg-center`}
+    <div className="flex flex-col w-50 md:w-70 gap-6">
+      <div className={`rounded-3xl min-w-50 min-h-50 md:min-w-70 md:min-h-70 bg-cover bg-center`}
         style={{ backgroundImage: `url(${imageUrl})` }} ></div>
       <div className="font-semibold text-xl">{title}</div>
+      <div className="uppercase text-soft-black">
+        Read More
+      </div>
     </div>
   )
 }
