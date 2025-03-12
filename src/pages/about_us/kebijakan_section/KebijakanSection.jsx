@@ -1,7 +1,7 @@
-import qualityIcon from "../../../assets/quality_icon.png";
-import teamworkIcon from "../../../assets/teamwork_icon.png";
-import satisfactionIcon from "../../../assets/satisfaction_icon.png";
-import integrityIcon from "../../../assets/integrity_icon.png";
+import qualityIcon from "../../../assets/about_us/quality_icon.png";
+import teamworkIcon from "../../../assets/about_us/teamwork_icon.png";
+import satisfactionIcon from "../../../assets/about_us/satisfaction_icon.png";
+import integrityIcon from "../../../assets/about_us/integrity_icon.png";
 import KebijakanGridItem from "./KebijakanGridItem";
 
 function KebijakanSection() {

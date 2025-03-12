@@ -1,7 +1,7 @@
-import valueImage1 from "../../../assets/value_image_1.png";
-import valueImage2 from "../../../assets/value_image_2.png";
-import misionIcon from "../../../assets/mision_icon.png";
-import visionIcon from "../../../assets/vision_icon.png";
+import valueImage1 from "../../../assets/about_us/value_image_1.png";
+import valueImage2 from "../../../assets/about_us/value_image_2.png";
+import misionIcon from "../../../assets/about_us/mision_icon.png";
+import visionIcon from "../../../assets/about_us/vision_icon.png";
 import VisionMisionComp from "./VisionMisionComp";
 
 function ValuesSection() {

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import solutionImage from "../../../assets/solution_ways_image.png";
-import solutionIcon from "../../../assets/solution_ways_icon.png";
-import innovImage from "../../../assets/sparks_of_innovation_image.png";
-import innovIcon from "../../../assets/sparks_of_innovation_icon.png";
-import collabImage from "../../../assets/collaboration_image.png";
-import collabIcon from "../../../assets/collaboration_icon.png";
+import solutionImage from "../../../assets/about_us/solution_ways_image.png";
+import solutionIcon from "../../../assets/about_us/solution_ways_icon.png";
+import innovImage from "../../../assets/about_us/sparks_of_innovation_image.png";
+import innovIcon from "../../../assets/about_us/sparks_of_innovation_icon.png";
+import collabImage from "../../../assets/about_us/collaboration_image.png";
+import collabIcon from "../../../assets/about_us/collaboration_icon.png";
 import BrandStoryTab from "./BrandStoryTab";
 import BrandStoryTabBody from "./BrandStoryTabBody";
 
