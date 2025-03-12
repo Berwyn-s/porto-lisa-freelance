@@ -1,4 +1,4 @@
-function KebijakanComp({ icon, title, subtitle }) {
+function KebijakanGridItem({ icon, title, subtitle }) {
     return (
         <div className="flex flex-wrap py-10 px-8 bg-gray-100 rounded-3xl">
             <img src={icon} alt="Icon" className="w-1/5 h-30 object-contain" />
@@ -11,4 +11,4 @@ function KebijakanComp({ icon, title, subtitle }) {
     );
 }
 
-export default KebijakanComp;
+export default KebijakanGridItem;
