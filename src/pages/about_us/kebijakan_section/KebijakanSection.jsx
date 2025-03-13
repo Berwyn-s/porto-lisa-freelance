@@ -10,9 +10,12 @@ function KebijakanSection() {
 
     return (
         <div className="mx-20 items-center">
+            {/* Section Title */}
             <h3 className="w-full text-4xl font-bold text-black text-center mb-[40px]">
                 Kebijakan Mutu
             </h3>
+
+            {/* Grid Items */}
             <div className="grid grid-flow-row grid-cols-2 gap-10">
                 <KebijakanGridItem
                     icon={qualityIcon}
