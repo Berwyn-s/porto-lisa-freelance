@@ -27,7 +27,7 @@ function ValuesSection() {
                 <h3 className="text-4xl font-bold text-black">Our Value</h3>
                 <p className="text-gray-600 mt-2">{valueSubtitle}</p>
 
-                <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
 
                 <div className="w-full flex flex-wrap">
                     <VisionMisionComp icon={visionIcon} title={"Vision"} subtitle={vmSubtitle} />

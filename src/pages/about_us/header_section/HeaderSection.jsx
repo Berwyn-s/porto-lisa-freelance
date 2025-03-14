@@ -20,8 +20,8 @@ function HeaderSection() {
 
             {/* Stats */}
             <div className="bg-white text-black p-8 rounded-lg mx-10 flex justify-around shadow-lg absolute -bottom-15 left-1/2 transform -translate-x-1/2 w-3/4">
-                {stats.map((stat) => (
-                    <StatsItem value={stat.value} label={stat.label} />
+                {stats.map((stat, index) => (
+                    <StatsItem key={index} value={stat.value} label={stat.label} />
                 ))}
             </div>
         </div>
