@@ -36,9 +36,12 @@ function BrandStorySection() {
 
     return (
         <div className="mx-19 items-center">
+            {/* Section Title */}
             <h3 className="w-full text-4xl font-bold text-black text-center mb-[40px]">
                 Brand Story
             </h3>
+
+            {/* Tabs */}
             <div className="w-full flex gap-10">
                 {tabs.map((tab, index) => (
                     <BrandStoryTab
@@ -50,6 +53,8 @@ function BrandStorySection() {
                     />
                 ))}
             </div>
+
+            {/* Tabs Body */}
             <BrandStoryTabBody
                 title={tabs[tabIndex].title}
                 subtitle={tabs[tabIndex].subtitle}
