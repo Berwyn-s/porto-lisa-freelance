@@ -1,10 +1,12 @@
 function VisionMisionComp({ icon, title, subtitle }) {
     return (
-        <div className="mt-6 w-1/2">
+        <div className="mt-3 w-full sm:mt-6 sm:w-1/2 md:mt-0">
             <div className="w-11/12">
-                <img src={icon} alt="Icon" className="" />
-                <h4 className="text-2xl font-bold text-black my-1">{title}</h4>
-                <p className="text-gray-600">{subtitle}</p>
+                <img src={icon} alt="Icon" className="hidden sm:block" />
+                <h4 className="text-lg sm:text-xl ld:text-2xl font-bold text-black my-2">
+                    {title}
+                </h4>
+                <p className="text-sm sm:text-base lg:text-lg text-gray-600">{subtitle}</p>
             </div>
         </div>
     );

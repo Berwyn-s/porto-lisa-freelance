@@ -11,7 +11,7 @@ function ValuesSection() {
         "Leverage agile frameworks to provide a robust synopsis for strategy foster.";
 
     return (
-        <div className="flex flex-wrap mx-25 items-center">
+        <div className="flex flex-wrap items-center mx-5 md:mt-10 xl:mx-25">
             {/* Images */}
             <div className="w-full md:w-1/2 p-4 relative">
                 <img src={valueImage1} alt="Containers" className="w-full shadow-md relative" />
@@ -24,10 +24,12 @@ function ValuesSection() {
 
             {/* Values */}
             <div className="w-full md:w-1/2 p-4">
-                <h3 className="text-4xl font-bold text-black">Our Value</h3>
-                <p className="text-gray-600 mt-2">{valueSubtitle}</p>
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">Our Value</h3>
+                <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-2">
+                    {valueSubtitle}
+                </p>
 
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                <hr className="h-px my-6 bg-gray-200 border-0 dark:bg-gray-700" />
 
                 <div className="w-full flex flex-wrap">
                     <VisionMisionComp icon={visionIcon} title={"Vision"} subtitle={vmSubtitle} />
