@@ -2,16 +2,16 @@ import LegalNoticeItem from "./LegalNoticeItem";
 
 function LegalNoticeSection() {
     return (
-        <div className="bg-gray-100 px-80 py-10">
+        <div className="bg-gray-100 py-10 px-5 md:px-20 lg:px-40 xl:px-80">
             <p className="font-bold text-teal-400 text-center">LEGAL NOTICE</p>
 
             {/* Section Title */}
-            <h3 className="w-full text-4xl font-bold text-black text-center mt-[15px] mb-[40px]">
+            <h3 className="w-full text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold text-black text-center mt-[15px] mb-5 xl:mb-[40px]">
                 Pemberitahuan Penting Tentang Merek dan Logo “berijalan”
             </h3>
 
-            <div className="flex flex-col gap-[40px]">
-                <p className="text-sm text-justify text-gray-600">
+            <div className="flex flex-col gap-5 xl:gap-[40px] text-xs sm:text-sm md:text-base">
+                <p className="text-justify text-gray-600">
                     PT Cipta Sedaya Digital Indonesia (“CSDI”) merupakan perusahaan di bawah Group
                     PT Astra Internasional Tbk (“Astra Grup”), yang berada dalam Group Astra Credit
                     Companies (ACC). CSDI adalah Perusahaan yang bergerak di bidang pengembangan
@@ -55,7 +55,7 @@ function LegalNoticeSection() {
                     />
                 </div>
 
-                <p className="text-sm text-justify text-gray-600">
+                <p className="text-justify text-gray-600">
                     There are many variations of passages of Lorem Ipsum available, but the majority
                     have suffered alteration in some form, by injected humour, or randomised words
                     which don't look even slightly believable.
