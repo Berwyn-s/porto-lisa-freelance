@@ -9,7 +9,7 @@ function BrandStoryTab({ isActive, number, title, onClick }) {
             }
             onClick={onClick}
         >
-            <h4 className="text-2xl font-bold text-center">
+            <h4 className="text-base lg:text-lg xl:text-xl font-bold text-center">
                 {numbering}. {title}
             </h4>
         </div>
