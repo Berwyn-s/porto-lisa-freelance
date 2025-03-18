@@ -1,3 +1,14 @@
+import moxaIcon from './../assets/company/moxa_icon.png'
+import astraFinancialIcon from './../assets/company/astra_financial_icon.png'
+import accIcon from './../assets/company/acc_icon.png'
+import sevaIcon from './../assets/company/seva_icon.png'
+import caasIcon from './../assets/company/caas_icon.png'
+import asuransiRamayanaIcon from './../assets/company/asuransi_ramayana_icon.png'
+import starIcon from './../assets/home/star_icon.png'
+import technoCenter from './../assets/home/techno_center.png'
+import quotesIcon from './../assets/home/quotes_icon.png'
+import photoIcon from './../assets/home/photo.png'
+
 function Home() {
     return (
       <div>
@@ -15,19 +26,19 @@ function Home() {
               </div>
             </div>
           </div>
-          <img src="src/assets/home/photo.png" alt="" />
+          <img src={photoIcon} alt="" />
         </section>
         <section className="flex flex-col items-center mt-20 gap-3">
           <div>
             Dipercayai oleh lebih dari 20+ bisnis dan tim di seluruh Indonesia
           </div>
           <div className="flex flex-row gap-5 justify-center">
-            <img src="src/assets/company/astra_financial_icon.png" alt="" />
-            <img src="src/assets/company/acc_icon.png" alt="" />
-            <img src="src/assets/company/seva_icon.png" alt="" />
-            <img src="src/assets/company/moxa_icon.png" alt="" />
-            <img src="src/assets/company/caas_icon.png" alt="" />
-            <img src="src/assets/company/asuransi_ramayana_icon.png" alt="" />
+            <img src={astraFinancialIcon} alt="" />
+            <img src={accIcon} alt="" />
+            <img src={sevaIcon} alt="" />
+            <img src={moxaIcon} alt="" />
+            <img src={caasIcon} alt="" />
+            <img src={asuransiRamayanaIcon} alt="" />
           </div>
         </section>
         <section className="bg-soft-blue rounded-xl px-4 py-8 flex flex-col items-center justify-center mt-16 max-w-[1226px] mx-auto">
@@ -61,7 +72,7 @@ function Home() {
                 <span className="capitalize font-medium text-xl">Analytics Report Development</span>
               </div>
             </div>
-            <img src="src/assets/home/techno_center.png" alt="" />
+            <img src={technoCenter} alt="" />
           </div>
           <div className="w-full pl-16 mt-6 text-soft-gray font-medium font-montserrat underline text-xl ">
             <span className="hover:cursor-pointer hover:font-bold">Learn More</span>
@@ -158,7 +169,7 @@ function Home() {
           <div className="uppercase text-gray-400 font-bold font-montserrat text-2xl">Happy customers</div>
           <div className="capitalize font-bold text-4xl mt-4 font-montserrat">Apa kata pelanggan kami</div>
           <div className="flex flex-row mt-12 gap-6 justify-center items-center">
-            <img src="src/assets/home/quotes_icon.png" alt="" />
+            <img src={quotesIcon} alt="" />
             <div className="flex flex-row items-center gap-4">
               <div className={`w-15 h-15 bg-cover bg-center inline-block rounded-full`}
                 style={{ backgroundImage: `url(https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)` }}>
@@ -166,11 +177,11 @@ function Home() {
               
               <div className="flex flex-col">
                 <div className="flex flex-row">
-                  <img src="src/assets/home/star_icon.png" alt="" />
-                  <img src="src/assets/home/star_icon.png" alt="" />
-                  <img src="src/assets/home/star_icon.png" alt="" />
-                  <img src="src/assets/home/star_icon.png" alt="" />
-                  <img src="src/assets/home/star_icon.png" alt="" />
+                  <img src={starIcon} alt="" />
+                  <img src={starIcon} alt="" />
+                  <img src={starIcon} alt="" />
+                  <img src={starIcon} alt="" />
+                  <img src={starIcon} alt="" />
                 </div>
                 <div className="font-bold text-2xl text-soft-black">
                   Johnson Abadi

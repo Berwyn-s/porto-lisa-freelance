@@ -1,3 +1,8 @@
+import berijalanLogoWhite from './../assets/berijalan_logo_white.png'
+import facebookIcon from './../assets/social_media/facebook.png'
+import instagramIcon from './../assets/social_media/instagram.png'
+import twitterIcon from './../assets/social_media/twitter.png'
+import youtubeIcon from './../assets/social_media/youtube.png'
 
 function MenuTitle({title}){
     return (
@@ -15,7 +20,7 @@ function Footer() {
     return (
         <div className="bg-[#0038B2] w-full">
             <div className="max-w-[1226px] mx-auto flex flex-row justify-around p-20">
-                <img className="max-h-[44px]" src="src/assets/berijalan_logo_white.png" alt="" />
+                <img className="max-h-[44px]" src={berijalanLogoWhite} alt="" />
                 <div className="flex flex-col">
                     <MenuTitle title={"Learn More"}/>
                     <MenuItem name={"About Us"}/>
@@ -38,10 +43,10 @@ function Footer() {
                 <div className="flex flex-col">
                     <MenuTitle title={"Social"}/>
                     <div className="flex flex-row gap-6">
-                        <img src="src/assets/social_media/facebook.png" alt="" />
-                        <img src="src/assets/social_media/instagram.png" alt="" />
-                        <img src="src/assets/social_media/twitter.png" alt="" />
-                        <img src="src/assets/social_media/youtube.png" alt="" />
+                        <img src={facebookIcon} alt="" />
+                        <img src={instagramIcon} alt="" />
+                        <img src={twitterIcon} alt="" />
+                        <img src={youtubeIcon} alt="" />
                     </div>
                 </div>
             </div>

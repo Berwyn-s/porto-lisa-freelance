@@ -1,4 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import personIcon from './../assets/career/person.png';
+import rocketIcon from './../assets/career/rocket.png';
+import clockIcon from './../assets/career/clock.png';
+import plusIcon from './../assets/career/plus.png';
 
 function JobPostings() {
   const navigate = useNavigate();
@@ -100,10 +104,10 @@ function Career() {
                 Nilai yang menggambarkan kami
             </div>
             <div className="flex flex-row flex-wrap justify-center max-w-[1000px] mx-auto gap-8 mt-8">
-                <ValueCard imgUrl={'src/assets/career/person.png'} title={'Patients come first'} desc={'Kesabaran menjadi kunci utama dari kesuksesan bekerjasama dalam tim.'} />
-                <ValueCard imgUrl={'src/assets/career/rocket.png'} title={'Career growth'} desc={'Peningkatan karir secara konstan bersama dengan berijalan'} />
-                <ValueCard imgUrl={'src/assets/career/clock.png'} title={'Flekxible hours'} desc={'Waktu kerja fleksibel dimanapun dan kapanpun bersama kami.'} />
-                <ValueCard imgUrl={'src/assets/career/plus.png'} title={'Medical insurance'} desc={'Kesehatan menjadi prioritas utama kami terutama bagi karyawan kami.'} />
+                <ValueCard imgUrl={personIcon} title={'Patients come first'} desc={'Kesabaran menjadi kunci utama dari kesuksesan bekerjasama dalam tim.'} />
+                <ValueCard imgUrl={rocketIcon} title={'Career growth'} desc={'Peningkatan karir secara konstan bersama dengan berijalan'} />
+                <ValueCard imgUrl={clockIcon} title={'Flekxible hours'} desc={'Waktu kerja fleksibel dimanapun dan kapanpun bersama kami.'} />
+                <ValueCard imgUrl={plusIcon} title={'Medical insurance'} desc={'Kesehatan menjadi prioritas utama kami terutama bagi karyawan kami.'} />
             </div>
         </section>
         <JobPostings />
