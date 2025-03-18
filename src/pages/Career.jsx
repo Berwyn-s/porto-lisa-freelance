@@ -70,6 +70,23 @@ function Career() {
             <div className="text-[#ffffff] bg-[#00C2B6] mx-auto py-4 px-20 rounded-full w-fit mt-8 font-medium">
                 Cari posisi yang sesuai
             </div>
+
+            <div className="grid grid-cols-[6fr_7fr] gap-6 mt-8">
+                <div className="rounded-3xl overflow-hidden">
+                <img 
+                    src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="Team members working" 
+                    className="w-full h-full object-cover"
+                />
+                </div>
+                <div className="rounded-3xl overflow-hidden">
+                <img 
+                    src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="Team collaboration" 
+                    className="w-full h-full object-cover"
+                />
+                </div>
+            </div>
         </section>
         <section className="mt-20  max-w-[1226px] mx-auto">
             <div className="bg-[#F6F9FF] py-4 px-10 rounded-full text-[#002D72] mx-auto w-fit font-bold">Nilai</div>
