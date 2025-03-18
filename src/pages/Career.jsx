@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function JobPostings() {
+  const navigate = useNavigate();
+
     return (
       <div className="mx-auto px-4 py-12 max-w-[1226px] mt-20">
         <h1 className="text-4xl font-bold text-center mb-12">Lowongan saat ini</h1>
@@ -19,8 +23,9 @@ function JobPostings() {
               coding dan kebutuhan klien.
             </p>
             
-            <button className="bg-white text-black py-3 px-8 rounded-full font-bold hover:bg-gray-100 transition-colors">
-              Apply Now
+            <button className="bg-white text-black py-3 px-8 rounded-full font-bold hover:bg-gray-100 hover:cursor-pointer transition-colors"
+            onClick={() => {navigate("/career/web-designer")}}>
+              Periksa Lowongan
             </button>
           </div>
           
@@ -39,8 +44,9 @@ function JobPostings() {
               kebutuhan lainnya.
             </p>
             
-            <button className="border border-gray-300 text-gray-800 py-3 px-8 rounded-full font-bold hover:bg-gray-50 transition-colors">
-              Apply Now
+            <button className="border border-gray-300 text-gray-800 py-3 px-8 rounded-full font-bold hover:cursor-pointer hover:bg-gray-50 transition-colors"
+            onClick={() => {navigate("/career/front-end-developer")}}>
+              Periksa Lowongan
             </button>
           </div>
         </div>
