@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { Outlet } from "react-router-dom";
 
@@ -8,7 +9,7 @@ function Layout() {
             <main className="py-10 bg-white text-black">
                 <Outlet />
             </main>
-            <footer>© 2025 Your Website</footer>
+            <Footer />
         </div>
     );
 }
