@@ -12,6 +12,14 @@ import technoCenter1 from './../assets/home/techno_center_1.png'
 import technoCenter2 from './../assets/home/techno_center_2.png'
 import technoCenter3 from './../assets/home/techno_center_3.png'
 import technoCenter4 from './../assets/home/techno_center_4.png'
+import berbisnis1 from './../assets/home/berbisnis_1.png'
+import berbisnis2 from './../assets/home/berbisnis_2.png'
+import people from './../assets/home/vuesax/people.png'
+import note2 from './../assets/home/vuesax/note-2.png'
+import money from './../assets/home/vuesax/money-send.png'
+import hierarchy from './../assets/home/vuesax/hierarchy.png'
+import pet from './../assets/home/vuesax/pet.png'
+import tree from './../assets/home/vuesax/tree.png'
 
 function Home() {
     return (
@@ -88,17 +96,17 @@ function Home() {
           <div className="capitalize font-bold text-4xl mt-4 font-montserrat">Mengapa harus memilih kami</div>
           <div className="flex flex-row mt-16 gap-8 font-montserrat text-2xl font-light justify-between items-center">
             <div className="flex flex-col justify-center align-center gap-4">
-              <img className="w-52 mx-auto" src="src/assets/home/berbisnis_1.png" alt="" />
+              <img className="w-52 mx-auto" src={berbisnis1} alt="" />
               <div className="text-xl font-semibold text-center">Tersedia kapanpun, dimanapun</div>
               <p className="text-center text-xl font-light">Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat.</p>
             </div>
             <div className="flex flex-col justify-center align-center gap-4">
-              <img className="w-52 mx-auto" src="src/assets/home/berbisnis_2.png" alt="" />
+              <img className="w-52 mx-auto" src={berbisnis2} alt="" />
               <div className="text-xl font-semibold text-center">Tersedia kapanpun, dimanapun</div>
               <p className="text-center text-xl font-light">Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat.</p>
             </div>
             <div className="flex flex-col justify-center align-center gap-4">
-              <img className="w-52 mx-auto" src="src/assets/home/berbisnis_1.png" alt="" />
+              <img className="w-52 mx-auto" src={berbisnis1} alt="" />
               <div className="text-xl font-semibold text-center">Tersedia kapanpun, dimanapun</div>
               <p className="text-center text-xl font-light">Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat.</p>
             </div>
@@ -110,32 +118,32 @@ function Home() {
           <div className="text-center md:text-start capitalize font-bold text-4xl mt-4 font-montserrat">Bersama kami tingkatkan kelas bisnis anda</div>
           <div className="flex flex-row flex-wrap pt-12 justify-center gap-8 md:gap-16">
             <CommunityCard 
-              imageUrl="src/assets/home/vuesax/people.png"
+              imageUrl={people}
               title="Lapangan kerja baru"
               description="Lorem ipsum dolor sit amet consectetur. A diam felis imperdiet amet turpis ac et aliquam"
             />
             <CommunityCard 
-              imageUrl="src/assets/home/vuesax/note-2.png"
+              imageUrl={note2}
               title="Sertifikasi Mitra"
               description="Lorem ipsum dolor sit amet consectetur. A diam felis imperdiet amet turpis ac et aliquam"
             />
             <CommunityCard 
-              imageUrl="src/assets/home/vuesax/money-send.png"
+              imageUrl={money}
               title="Peningkatan Ekonomi"
               description="Lorem ipsum dolor sit amet consectetur. A diam felis imperdiet amet turpis ac et aliquam"
             />
             <CommunityCard 
-              imageUrl="src/assets/home/vuesax/hierarchy.png"
+              imageUrl={hierarchy}
               title="Kegiatan CSR"
               description="Lorem ipsum dolor sit amet consectetur. A diam felis imperdiet amet turpis ac et aliquam"
             />
             <CommunityCard 
-              imageUrl="src/assets/home/vuesax/pet.png"
+              imageUrl={pet}
               title="Layanan Masyarakat"
               description="Lorem ipsum dolor sit amet consectetur. A diam felis imperdiet amet turpis ac et aliquam"
             />
             <CommunityCard 
-              imageUrl="src/assets/home/vuesax/tree.png"
+              imageUrl={tree}
               title="Ramah lingkungan"
               description="Lorem ipsum dolor sit amet consectetur. A diam felis imperdiet amet turpis ac et aliquam"
             />
@@ -196,7 +204,7 @@ function Home() {
           <div className="text-center font-light font-montserrat text-2xl mt-8">
           Berijalan sangat responsif dan sabar dalam menjawab pertanyaan saya. Mereka juga memberikan saran-saran yang sangat bermanfaat untuk website saya. Setelah berdiskusi, kami pun sepakat untuk membuat website dengan desain yang modern dan minimalis. Proses desain dan pengembangan website berjalan dengan lancar.
           </div>
-          <img className="mt-8" src="src/assets/company/moxa_icon.png" alt="" />
+          <img className="mt-8" src={moxaIcon} alt="" />
         </section>
 
         <OfficeGallery />
