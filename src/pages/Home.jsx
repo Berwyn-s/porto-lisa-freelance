@@ -8,6 +8,10 @@ import starIcon from './../assets/home/star_icon.png'
 import technoCenter from './../assets/home/techno_center.png'
 import quotesIcon from './../assets/home/quotes_icon.png'
 import photoIcon from './../assets/home/photo.png'
+import technoCenter1 from './../assets/home/techno_center_1.png'
+import technoCenter2 from './../assets/home/techno_center_2.png'
+import technoCenter3 from './../assets/home/techno_center_3.png'
+import technoCenter4 from './../assets/home/techno_center_4.png'
 
 function Home() {
     return (
@@ -56,19 +60,19 @@ function Home() {
               Membantu bisnis untuk menjangkau pelanggan dan calon pelanggan mereka dengan lebih efisien melalui sistem yang terintegrasi
               </div>
               <div>
-                <img className="inline-block mr-4" src="src/assets/home/techno_center_1.png" alt="" />
+                <img className="inline-block mr-4" src={technoCenter1} alt="" />
                 <span className="capitalize font-medium text-xl">Mobile & Web Development</span>
               </div>
               <div>
-                <img className="inline-block mr-4" src="src/assets/home/techno_center_2.png" alt=""  />
+                <img className="inline-block mr-4" src={technoCenter2} alt=""  />
                 <span className="capitalize font-medium text-xl">Robotic & Automation</span>
               </div>
               <div>
-                <img className="inline-block mr-4" src="src/assets/home/techno_center_3.png" alt="" />
+                <img className="inline-block mr-4" src={technoCenter3} alt="" />
                 <span className="capitalize font-medium text-xl">Techno Center Product Solution</span>
               </div>
               <div>
-                <img className="inline-block mr-4" src="src/assets/home/techno_center_4.png" alt="" />
+                <img className="inline-block mr-4" src={technoCenter4}alt="" />
                 <span className="capitalize font-medium text-xl">Analytics Report Development</span>
               </div>
             </div>
