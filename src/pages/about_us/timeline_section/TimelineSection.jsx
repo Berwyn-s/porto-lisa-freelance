@@ -17,34 +17,34 @@ function TimelineSection() {
 
     const timelineData = [
         {
-            year: "2018",
-            title: "Lorem Ipsum",
+            year: "28 Januari 2021",
+            title: "Peletakan Batu Pertama",
             subtitle:
-                "Lorem ipsum dolor sit amet consectetur. Mauris massa odio fermentum dignissim tincidunt nulla dictum enim. Duis cras eu non in egestas ultrices metus enim.",
+                "Peletakan batu pertama oleh Jajaran Board of Directors Astra Credit Companies (ACC) menjadi tanda dimulainya pembangunan ACC Digital Operation Center.",
         },
         {
-            year: "2019",
-            title: "Lorem Ipsum",
+            year: "23 Maret 2022",
+            title: "Peresmian BeriJalan Office",
             subtitle:
-                "Lorem ipsum dolor sit amet consectetur. Mauris massa odio fermentum dignissim tincidunt nulla dictum enim. Duis cras eu non in egestas ultrices metus enim.",
+                "Diresmikan oleh Sri Sultan Hamengku Buwono X, Berjalan Office resmi menjadi pusat operasional berbasis digital untuk memberikan pelayanan yang terbaik kepada pelanggan dan partner bisnis.",
         },
         {
-            year: "2020",
-            title: "Lorem Ipsum",
+            year: "13 September 2022",
+            title: "Brand Activation BeriJalan Techno Center",
             subtitle:
-                "Lorem ipsum dolor sit amet consectetur. Mauris massa odio fermentum dignissim tincidunt nulla dictum enim. Duis cras eu non in egestas ultrices metus enim.",
+                "Diresmikannya kantor operasional Techno Center untuk membantu pelangganmengembangkan produk dan layanan digital sekaligus sebagai titik temu bagi komunitas digital di Yogyakarta",
         },
         {
-            year: "2021",
-            title: "Lorem Ipsum",
+            year: "16 Januari 2023",
+            title: "Penghargaan ACC Improvement Awards",
             subtitle:
-                "Lorem ipsum dolor sit amet consectetur. Mauris massa odio fermentum dignissim tincidunt nulla dictum enim. Duis cras eu non in egestas ultrices metus enim.",
+                "Meraih penghargaan Juara 1 kategori Quality Control Project dalam ajang ACC Improvement Awards melalui project Berijalan.",
         },
         {
-            year: "2022",
-            title: "Lorem Ipsum",
+            year: "24 Maret 2023",
+            title: "Peringatan 1 Tahun Berijalan Office",
             subtitle:
-                "Lorem ipsum dolor sit amet consectetur. Mauris massa odio fermentum dignissim tincidunt nulla dictum enim. Duis cras eu non in egestas ultrices metus enim.",
+                "Berjalan beriniatif untuk berbagi dalam kegiatan berbuka puasa, pemberian beasiswa kepada komunitas difabel, dan pembagian bibit pohon.",
         },
     ];
 
