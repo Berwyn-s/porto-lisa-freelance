@@ -19,7 +19,7 @@ function MenuItem({name}){
 function Footer() {
     return (
         <div className="bg-[#0038B2] w-full">
-            <div className="max-w-[1226px] mx-auto flex flex-row justify-around p-20">
+            <div className="max-w-[1226px] mx-auto flex flex-row flex-wrap justify-around p-20">
                 <img className="max-h-[44px]" src={berijalanLogoWhite} alt="" />
                 <div className="flex flex-col">
                     <MenuTitle title={"Learn More"}/>

@@ -24,8 +24,8 @@ import tree from './../assets/home/vuesax/tree.png'
 function Home() {
     return (
       <div>
-        <section className="flex flex-row flex-wrap justify-around">
-          <div className="w-1/3 font-bold text-5xl text-soft-black">
+        <section className="flex flex-row flex-wrap justify-center">
+          <div className="min-w-[500px] w-1/3 font-bold text-5xl text-soft-black">
             Kembangkan bisnis dengan keputusan berbasis data oleh <span className="text-berijalan-green">berijalan.</span>
             <div>
               <div className="text-2xl font-light pt-4">
@@ -38,13 +38,13 @@ function Home() {
               </div>
             </div>
           </div>
-          <img src={photoIcon} alt="" />
+          <img src={photoIcon} className='object-contain' alt="" />
         </section>
         <section className="flex flex-col items-center mt-20 gap-3">
           <div>
             Dipercayai oleh lebih dari 20+ bisnis dan tim di seluruh Indonesia
           </div>
-          <div className="flex flex-row gap-5 justify-center">
+          <div className="flex flex-row flex-wrap gap-5 justify-center">
             <img src={astraFinancialIcon} alt="" />
             <img src={accIcon} alt="" />
             <img src={sevaIcon} alt="" />
@@ -61,7 +61,7 @@ function Home() {
             <div>Operations Center</div>
             <div>Telephony Center</div>
           </div>
-          <div className="flex flex-row justify-between mt-16">
+          <div className="flex flex-row lg:flex-nowrap flex-wrap justify-center lg:justify-between mt-16">
             <div className="flex flex-col gap-4">
               <div className="font-medium text-4xl font-montserrat">Techno Center</div>
               <div className="font-light font-montserrat text-xl">
@@ -84,7 +84,7 @@ function Home() {
                 <span className="capitalize font-medium text-xl">Analytics Report Development</span>
               </div>
             </div>
-            <img src={technoCenter} alt="" />
+            <img src={technoCenter} className="aspect-[3/2] object-cover" alt="" />
           </div>
           <div className="w-full pl-16 mt-6 text-soft-gray font-medium font-montserrat underline text-xl ">
             <span className="hover:cursor-pointer hover:font-bold">Learn More</span>
@@ -94,7 +94,7 @@ function Home() {
         <section className="bg-soft-cream-yellow rounded-xl px-4 py-8 flex flex-col items-center justify-center mt-16 max-w-[1226px] mx-auto">
           <div className="uppercase text-gray-400 font-bold font-montserrat text-2xl">Kemudahan Berbisnis</div>
           <div className="capitalize font-bold text-4xl mt-4 font-montserrat">Mengapa harus memilih kami</div>
-          <div className="flex flex-row mt-16 gap-8 font-montserrat text-2xl font-light justify-between items-center">
+          <div className="flex flex-row flex-wrap mt-16 gap-8 font-montserrat text-2xl font-light justify-between items-center">
             <div className="flex flex-col justify-center align-center gap-4">
               <img className="w-52 mx-auto" src={berbisnis1} alt="" />
               <div className="text-xl font-semibold text-center">Tersedia kapanpun, dimanapun</div>
